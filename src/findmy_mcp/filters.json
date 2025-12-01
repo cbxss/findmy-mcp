@@ -1,0 +1,85 @@
+{
+  "core_protocol": [
+    "\"Model Context Protocol\"",
+    "\"MCP server\"",
+    "\"MCPServer\"",
+    "\"mcp-server\"",
+    "\"protocolVersion\": \"2024-11-05\"",
+    "\"protocolVersion\": \"2024\"",
+    "\"jsonrpc\": \"2.0\" mcp",
+    "\"method\": \"initialize\" mcp"
+  ],
+  "transport_sse": [
+    "\"text/event-stream\" mcp",
+    "\"text/event-stream\" jsonrpc",
+    "\"Server-Sent Events\" mcp",
+    "\"content-type\": \"text/event-stream\" initialize",
+    "event-stream protocol jsonrpc"
+  ],
+  "jsonrpc_methods": [
+    "\"tools/list\"",
+    "\"resources/list\"",
+    "\"prompts/list\"",
+    "\"tools/call\"",
+    "\"initialize\" \"capabilities\"",
+    "\"method\": \"notifications/initialized\""
+  ],
+  "endpoints": [
+    "\"/mcp\"",
+    "\"/sse\"",
+    "\"/messages\"",
+    "\"/v1/mcp\"",
+    "\"/api/mcp\"",
+    "\"/mcp/sse\"",
+    "\"/mcp/messages\"",
+    "\"/rpc\"",
+    "\"/jsonrpc\""
+  ],
+  "frameworks": [
+    "\"FastMCP\"",
+    "\"@modelcontextprotocol\"",
+    "\"anthropic/mcp\"",
+    "\"uvicorn\" mcp",
+    "\"fastapi\" mcp",
+    "\"express\" mcp server",
+    "\"next.js\" mcp"
+  ],
+  "ports_combined": [
+    "port:3000 jsonrpc",
+    "port:3000 event-stream",
+    "port:5000 mcp",
+    "port:5000 jsonrpc",
+    "port:8000 mcp",
+    "port:8000 text/event-stream",
+    "port:8080 jsonrpc tools",
+    "port:8080 mcp server"
+  ],
+  "cloud_platforms": [
+    "\"cloudflare\" mcp",
+    "\"vercel\" mcp server",
+    "\"heroku\" mcp",
+    "\"railway\" mcp",
+    "\"render\" mcp server",
+    "\"fly.io\" mcp"
+  ],
+  "capabilities": [
+    "\"capabilities\" \"tools\"",
+    "\"capabilities\" \"resources\"",
+    "\"capabilities\" \"prompts\"",
+    "\"serverInfo\" \"name\"",
+    "\"serverInfo\" \"version\""
+  ],
+  "http_headers": [
+    "\"x-mcp-version\"",
+    "\"x-protocol-version\"",
+    "server: mcp",
+    "mcp-server-version"
+  ],
+  "security_markers": [
+    "mcp \"authentication\"",
+    "mcp \"authorization\"",
+    "mcp \"api-key\"",
+    "jsonrpc \"bearer\"",
+    "event-stream \"token\""
+  ]
+}
