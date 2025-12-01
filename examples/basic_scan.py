@@ -30,16 +30,16 @@ async def main() -> None:
     result = await scanner.scan(category="core_protocol")
 
     # Display results
-    print(f"\n{'='*80}")
+    print(f"\n{'=' * 80}")
     print(f"Scan Results - {result.scan_id}")
-    print(f"{'='*80}")
+    print(f"{'=' * 80}")
     print(f"Discovered servers: {result.total_shodan_results}")
     print(f"Verified MCP servers: {len(result.verified_servers)}")
 
     if result.verified_servers:
-        print(f"\n{'='*80}")
+        print(f"\n{'=' * 80}")
         print("Verified Servers:")
-        print(f"{'='*80}")
+        print(f"{'=' * 80}")
 
         for server in result.verified_servers:
             print(f"\nURL: {server.url}")

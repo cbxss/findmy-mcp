@@ -320,9 +320,7 @@ class MCPVerifier:
             if response.status_code == 200:
                 data = response.json()
                 if "result" in data and "tools" in data["result"]:
-                    return [
-                        MCPTool.model_validate(tool) for tool in data["result"]["tools"]
-                    ]
+                    return [MCPTool.model_validate(tool) for tool in data["result"]["tools"]]
         except Exception:
             pass
 

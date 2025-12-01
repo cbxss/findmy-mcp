@@ -23,8 +23,8 @@ async def main() -> None:
     custom_filters = [
         '"Model Context Protocol"',
         '"jsonrpc": "2.0" mcp',
-        'port:3000 jsonrpc',
-        'port:8000 text/event-stream',
+        "port:3000 jsonrpc",
+        "port:8000 text/event-stream",
         '"FastMCP"',
         '"@modelcontextprotocol"',
     ]

@@ -193,7 +193,9 @@ class MCPScanner:
         console.print(f"\n[bold cyan]Starting MCP scan {scan_id}[/bold cyan]\n")
 
         # Create output directory
-        output_dir = self.config.output_dir / f"scan_{scan_id}_{started_at.strftime('%Y%m%d_%H%M%S')}"
+        output_dir = (
+            self.config.output_dir / f"scan_{scan_id}_{started_at.strftime('%Y%m%d_%H%M%S')}"
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
 
         result = ScanResult(

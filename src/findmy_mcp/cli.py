@@ -172,8 +172,7 @@ def scan(
         # Check credits
         if info.get("query_credits", 0) < 1:
             console.print(
-                "[red]Error: Insufficient Shodan query credits. "
-                "Please upgrade your account.[/red]"
+                "[red]Error: Insufficient Shodan query credits. Please upgrade your account.[/red]"
             )
             raise typer.Exit(1)
 
@@ -387,9 +386,7 @@ def _display_results(result: "ScanResult") -> None:  # noqa: F821
         console.print(servers_table)
 
         if len(result.verified_servers) > 20:
-            console.print(
-                f"\n[dim]... and {len(result.verified_servers) - 20} more servers[/dim]"
-            )
+            console.print(f"\n[dim]... and {len(result.verified_servers) - 20} more servers[/dim]")
 
 
 if __name__ == "__main__":
